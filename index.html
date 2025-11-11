@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <link rel="stylesheet" href="insta.css" />
+    
+</head>
+<body>
+    <h4>Note:we can login means get that account info only by using 
+        username:varun,
+        password:varun@123 on this page
+    </h4>
+    <div class="page">
+        <div class="one">
+            <img class="phone-illustration" src="assets/phone.svg" alt="app preview" />
+        </div>
+        <div class="two">
+            <div class="brand">
+                <img class="brand-logo" src="assets/logo.svg" alt="Instagram" />
+            </div>
+            <div class="card">
+                <form class="login-form" id="loginForm">
+                    <input type="text" id="email" placeholder="Phone number, username, or email" class="input" required />
+                    <input type="password" id="password" placeholder="Password" class="input" required />
+                    <div class="error-message" id="errorMessage" style="display: none;">Sorry, your password was incorrect. Please double-check your password.</div>
+                    <button type="submit" class="btn-primary" id="btn">Log in</button>
+                    <a href="#" class="forgot-link">Forgot password?</a>
+                </form>
+            </div>
+            <div class="card card-secondary">
+                <p class="signup-text">Don't have an account? <span id="AC">Sign up</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<h2 style="text-align: center;">Developed by:Varun Kalpande</h2>
+</html>
+
+

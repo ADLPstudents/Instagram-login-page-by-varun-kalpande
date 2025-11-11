@@ -1,0 +1,150 @@
+/* Base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #fafafa;
+  color: #262626;
+}
+
+a {
+  color: #0095f6;
+  text-decoration: none;
+}
+
+/* Layout */
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+}
+
+.one,
+.two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.one {
+  margin-right: 32px;
+}
+
+.two {
+  width: 350px;
+}
+
+/* Illustration */
+.phone-illustration {
+  width: 380px;
+  height: auto;
+  display: block;
+}
+
+/* Brand */
+.brand {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.brand-logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Cards */
+.card {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.card + .card {
+  margin-top: 10px;
+}
+
+.card-secondary {
+  padding: 18px;
+  text-align: center;
+}
+
+.signup-text {
+  margin: 0;
+  font-size: 14px;
+}
+
+.signup-text span {
+  color: #0095f6;
+  font-weight: 600;
+}
+
+/* Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input {
+  padding: 10px 12px;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  background: #fafafa;
+  font-size: 14px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #a8a8a8;
+}
+
+.input.error {
+  border-color: #ed4956;
+}
+
+.error-message {
+  color: #ed4956;
+  font-size: 14px;
+  text-align: center;
+  margin: 8px 0;
+  padding: 8px;
+}
+
+.btn-primary {
+  margin-top: 8px;
+  padding: 8px 12px;
+  background-color: #0095f6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary:active {
+  transform: translateY(1px);
+}
+
+.forgot-link {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .one { display: none; }
+}
+
